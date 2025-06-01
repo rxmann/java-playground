@@ -1,4 +1,4 @@
-package com.codex.starter;
+package com.codex.core;
 
 public class Conditionals01 {
 

@@ -1,4 +1,4 @@
-package com.codex.starter;
+package com.codex.core;
 
 import java.util.Scanner;
 
