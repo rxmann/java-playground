@@ -7,8 +7,6 @@ public class Main {
 
         System.out.println("Hello, World!");
 
-        Dog dog = new Dog("Tommy", "German Shepard: Dog", 4);
-
 
 
     }

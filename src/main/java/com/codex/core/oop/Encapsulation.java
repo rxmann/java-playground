@@ -1,7 +1,6 @@
 package com.codex.core.oop;
 
 import com.codex.core.oop.common.BaseAccount;
-import com.codex.core.oop.common.Transaction;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
