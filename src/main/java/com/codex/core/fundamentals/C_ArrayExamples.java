@@ -10,7 +10,7 @@ import java.util.Arrays;
  * - Array iteration
  * - Array utility methods
  */
-public class ArrayExamples {
+public class C_ArrayExamples {
     public static void main(String[] args) {
         // 1. Array Declaration and Initialization
         System.out.println("=== Array Declaration and Initialization ===");
@@ -91,7 +91,7 @@ public class ArrayExamples {
         // Binary search (array must be sorted)
         int key = 8;
         int index = Arrays.binarySearch(numbersToSort, key);
-        System.out.println("Found " + key + " at index: " + index);
+        System.out.println("Found " + key + " at index: " + index + " using binary search.");
         
         // Fill
         int[] filledArray = new int[5];

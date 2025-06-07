@@ -1,7 +1,5 @@
 package com.codex.core.fundamentals;
 
-import java.util.Scanner;
-
 /**
  * This class demonstrates String handling in Java:
  * - String creation and initialization
@@ -10,24 +8,25 @@ import java.util.Scanner;
  * - String manipulation
  * - StringBuilder and StringBuffer
  */
-public class Strings {
+public class B_Strings {
     public static void main(String[] args) {
         // 1. String Creation and Initialization
         System.out.println("=== String Creation and Initialization ===");
         String str1 = "Hello";                     // String literal
         String str2 = new String("Hello");         // Using constructor
         String str3 = String.valueOf(123);         // Using valueOf
-        
+        String str4 = "hello";
+
         System.out.println("str1: " + str1);
         System.out.println("str2: " + str2);
         System.out.println("str3: " + str3);
+        System.out.println("str4: " + str4);
+
 
         // 2. String Comparison
         System.out.println("\n=== String Comparison ===");
         System.out.println("str1 equals str2: " + str1.equals(str2));
         System.out.println("str1 == str2: " + (str1 == str2));
-        
-        String str4 = "hello";
         System.out.println("str1 equalsIgnoreCase str4: " + str1.equalsIgnoreCase(str4));
         System.out.println("str1 compareTo str4: " + str1.compareTo(str4));
 
@@ -113,9 +112,9 @@ public class Strings {
         System.out.println("\n=== String Performance Example ===");
         long startTime = System.nanoTime();
         
-        String result = "";
-        for (int i = 0; i < 1000; i++) {
-            result += "a";
+        StringBuffer sbffer = new StringBuffer();
+        for (int i = 0; i < 100000; i++) {
+            sbffer.append("a");
         }
         
         long endTime = System.nanoTime();
@@ -125,7 +124,7 @@ public class Strings {
         startTime = System.nanoTime();
         
         StringBuilder efficientBuilder = new StringBuilder();
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 0; i < 100000; i++) {
             efficientBuilder.append("a");
         }
         

@@ -1,6 +1,5 @@
 package com.codex;
 
-import com.codex.core.fundamentals.JavaFundamentals;
 import com.codex.exceptions.ExceptionHandlingDemo;
 
 /**
@@ -9,11 +8,6 @@ import com.codex.exceptions.ExceptionHandlingDemo;
 public class MainDemo {
     public static void main(String[] args) {
         System.out.println("=== Java Core Concepts Demo ===\n");
-
-        // 1. Java Fundamentals
-        System.out.println("1. Running Java Fundamentals Demo:");
-        System.out.println("--------------------------------");
-        JavaFundamentals.main(args);
 
         // 2. OOP Concepts
         System.out.println("\n2. Running OOP Concepts Demo:");

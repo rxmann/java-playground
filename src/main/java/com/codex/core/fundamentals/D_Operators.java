@@ -10,7 +10,7 @@ package com.codex.core.fundamentals;
  * - Unary Operators
  * - Ternary Operator
  */
-public class Operators {
+public class D_Operators {
     public static void main(String[] args) {
         // 1. Arithmetic Operators
         System.out.println("=== Arithmetic Operators ===");
@@ -81,8 +81,8 @@ public class Operators {
 
         // 7. Ternary Operator
         System.out.println("\n=== Ternary Operator ===");
-        int age = 20;
-        String status = (age >= 18) ? "Adult" : "Minor";
+        int age = 21;
+        String status = (age >= 22) ? "Adult" : "Minor";
         System.out.println("Age = " + age);
         System.out.println("Status = " + status);
 

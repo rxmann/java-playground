@@ -9,7 +9,7 @@ package com.codex.core.fundamentals;
  * - Variable initialization
  * - Variable shadowing
  */
-public class Variables {
+public class A_Variables {
     // Instance variables (non-static fields)
     private int instanceVar = 1;            // instance variable
     private String name;                    // instance variable with default value (null)
@@ -33,7 +33,7 @@ public class Variables {
         instanceVar = 5;
     }
 
-    public Variables(String name) {
+    public A_Variables(String name) {
         this.name = name;  // 'this' refers to instance variable
     }
 
@@ -89,11 +89,14 @@ public class Variables {
         System.out.println("Constant PI: " + PI);
         
         // Creating instance
-        Variables vars = new Variables("Instance");
+        System.out.println();
+        A_Variables vars = new A_Variables("Instance");
         System.out.println("Instance variable: " + vars.instanceVar);
-        
+        System.out.println();
+
         // Demonstrating variable scope
         vars.demonstrateVariableScope();
+        System.out.println();
         
         // Demonstrating naming conventions
         vars.demonstrateNamingConventions();
@@ -101,18 +104,33 @@ public class Variables {
         // Variable declaration styles
         int a, b, c;           // multiple declarations
         int d = 1, e = 2;      // multiple declarations with initialization
+
+        // Data Types and Variables
+        // Primitive Types
+        byte byteVar = 127;
+        short shortVar = 32767;
+        int intVar = 2147483647;
+        long longVar = 9223372036854775807L;
+        float floatVar = 3.14f;
+        double doubleVar = 3.14159265359;
+        char charVar = 'A';
+        boolean boolVar = true;
+
+
+        System.out.println();
+        System.out.println("=== Primitive Types ===");
+        System.out.println("byte: " + byteVar);
+        System.out.println("short: " + shortVar);
+        System.out.println("int: " + intVar);
+        System.out.println("long: " + longVar);
+        System.out.println("float: " + floatVar);
+        System.out.println("double: " + doubleVar);
+        System.out.println("char: " + charVar);
+        System.out.println("boolean: " + boolVar);
         
         // Type inference with var (Java 10+)
         // var number = 42;     // type inference
         // var message = "Hello"; // type inference
-        
-        // Array declaration styles
-        int[] numbers = new int[5];
-        String[] names = {"Alice", "Bob", "Charlie"};
-        
-        System.out.println("\n=== Array Initialization ===");
-        for (String n : names) {
-            System.out.println(n);
-        }
+
     }
 } 
